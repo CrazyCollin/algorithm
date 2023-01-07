@@ -1,0 +1,7 @@
+.idea
+
+/cpp/src/*.out
+/cpp/.idea
+
+
+/go/.idea/

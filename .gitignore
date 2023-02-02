@@ -4,4 +4,6 @@
 /cpp/.idea
 
 
-/go/.idea/
+/go/.idea/*
+
+/javascript/.idea/*

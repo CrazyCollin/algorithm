@@ -29,7 +29,7 @@ public:
         auto curr1=list1;
         auto curr2=list2;
         while (curr1!= nullptr&&curr2!= nullptr){
-            if (curr1->val<=curr2->val){
+            if (curr1->val<curr2->val){
                 curr->next=curr1;
                 curr1=curr1->next;
             } else{
@@ -38,10 +38,10 @@ public:
             }
             curr=curr->next;
         }
-        if (curr1== nullptr){
-            curr->next=curr2;
-        } else{
+        if (curr1!= nullptr){
             curr->next=curr1;
+        } else{
+            curr->next=curr2;
         }
         return dummyHead->next;
     }

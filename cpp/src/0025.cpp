@@ -25,26 +25,24 @@ class Solution {
 public:
     ListNode* reverseKGroup(ListNode* head, int k) {
         if (head== nullptr){
-            return nullptr;
+            return head;
         }
         auto start=head;
         auto end=head;
-        for (int i = 0; i < k; ++i) {
-            // return head if list's len is less than K
-            if (end== nullptr){
+        for (int i = 0; i < k; i++) {
+            if (end==nullptr){
                 return head;
             }
             end=end->next;
         }
-        // after reverse, start is the last one in list
-        auto endNode= reverse(start,end);
+        auto start_node= reverse(start,end);
         start->next= reverseKGroup(end,k);
-        return endNode;
+        return start_node;
     }
     // [head,tail)
     ListNode* reverse(ListNode* head,ListNode* tail){
-        ListNode* prev= nullptr;
         auto curr=head;
+        ListNode* prev= nullptr;
         while (curr!=tail){
             auto tmp=curr->next;
             curr->next=prev;

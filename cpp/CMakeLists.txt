@@ -2,15 +2,7 @@ cmake_minimum_required(VERSION 3.21)
 project(cpp)
 
 set(CMAKE_CXX_STANDARD 14)
-#set(SRC_LIST
-#        src/0001.cpp
-#        src/0146.cpp
-#        src/0203.cpp
-#        src/0208.cpp
-#        src/0704.cpp
-#        src/s2-063.cpp src/0707.cpp src/0206.cpp src/0024.cpp src/0025.cpp src/0019.cpp src/0160.cpp src/0142.cpp src/0141.cpp src/0021.cpp src/0234.cpp src/0232.cpp src/0225.cpp src/0002.cpp src/0003.cpp src/0076.cpp src/0215.cpp src/0053.cpp src/quicksort.cpp src/0912.cpp src/0015.cpp src/0102.cpp src/0088.cpp src/0103.cpp src/0033.cpp src/0236.cpp src/0005.cpp src/0199.cpp src/0020.cpp src/0121.cpp src/0200.cpp src/0094.cpp src/0122.cpp src/0153.cpp src/0092.cpp src/0035.cpp)
-#
-#add_executable(${PROJECT_NAME} ${SRC_LIST})
+
 add_executable(0001 src/0001.cpp)
 add_executable(0146 src/0146.cpp)
 add_executable(0203 src/0203.cpp)
@@ -64,3 +56,20 @@ add_executable(0124 src/0124.cpp)
 add_executable(0700 src/0700.cpp)
 add_executable(0674 src/0674.cpp)
 add_executable(0230 src/0230.cpp)
+add_executable(0718 src/0718.cpp)
+add_executable(0056 src/0056.cpp)
+add_executable(0070 src/0070.cpp)
+add_executable(0239 src/0239.cpp)
+add_executable(0148 src/0148.cpp)
+add_executable(0022 src/0022.cpp)
+add_executable(0031 src/0031.cpp)
+add_executable(0039 src/0039.cpp)
+add_executable(0046 src/0046.cpp)
+add_executable(0047 src/0047.cpp)
+add_executable(0054 src/0054.cpp)
+add_executable(0057 src/0057.cpp)
+add_executable(0072 src/0072.cpp)
+add_executable(0077 src/0077.cpp)
+add_executable(0078 src/0078.cpp)
+add_executable(0090 src/0090.cpp)
+add_executable(0155 src/0155.cpp)

@@ -9,7 +9,7 @@ public:
     vector<vector<int>> res;
     vector<int> tmp;
     vector<vector<int>> combine(int n, int k) {
-        auto tmp=vector<int>(k,0);
+        tmp=vector<int>(k,0);
         dfs(n, k, 1);
         return res;
     }
@@ -32,7 +32,7 @@ auto main()->int {
     std::cin>>n>>k;
     Solution solution;
     auto res=solution.combine(n, k);
-    for (auto item : res) {
+    for (const auto& item : res) {
         for (auto i : item) {
             std::cout<<i<<"";
         }
